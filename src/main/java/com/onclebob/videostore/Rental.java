@@ -1,6 +1,9 @@
 package com.onclebob.videostore;
 
 public class Rental {
+    private final Movie movie;
+    private final int daysRented;
+
     public Rental(Movie movie, int daysRented) {
         this.movie = movie;
         this.daysRented = daysRented;
@@ -13,7 +16,4 @@ public class Rental {
     public Movie getMovie() {
         return movie;
     }
-
-    private Movie movie;
-    private int daysRented;
 }
